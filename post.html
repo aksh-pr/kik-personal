@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+        integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/utilities.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Post One</title>
+</head>
+
+<body id="home">
+    <header class="hero blog">
+        <div id="navbar" class="navbar top">
+            <h1 class="logo">
+                <span class="text-primary"><i class="fas fa-"></i>Kik Tichaphat</span>
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#cases">Gallery</a></li>
+                    <li><a href="index.html#blog">Blog</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="content">
+            <h1>Blog</h1>
+        </div>
+    </header>
+
+    <main>
+        <section class="post">
+            <h2>Travel Blog One</h2>
+            <p class="meta">
+                <i class="fas fa-user"></i> Posted by <strong>Kik Tichaphat</strong> | April 19 2020
+            </p>
+            <img src="images/home/kik1.jpeg" alt="">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus doloribus quia eius esse recusandae
+                expedita facilis a culpa quis corporis adipisci, cum, quibusdam enim numquam, ratione iure iusto fugit
+                earum.</p>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat dolorum ipsa qui eum, vel
+                voluptatibus adipisci labore, aspernatur reiciendis nemo voluptate, asperiores explicabo ipsum tenetur
+                ducimus hic harum. Rem consequatur ad explicabo dicta maiores sequi nostrum ratione labore voluptatem,
+                dignissimos odit debitis aliquam sit laborum provident voluptate fuga distinctio quas ea! Est eum
+                corporis rerum id maiores voluptatem vitae consequatur?
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint reiciendis odit nostrum aut eos
+                praesentium nesciunt. Sed tempore aliquam a recusandae est facere suscipit minus tempora eius, iste
+                facilis in? Debitis, qui aut placeat molestias dolore exercitationem vero. Voluptas necessitatibus at
+                exercitationem deserunt eius blanditiis sint veritatis repellat minus accusamus.
+            </p>
+        </section>
+    </main>
+
+    <footer class="footer bg-dark">
+        <div class="social">
+            <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+            <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+            <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
+            <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+        </div>
+        <p>Copyright &copy; 2020 - Kik Personal</p>
+    </footer>
+
+    <script>
+        const navbar = document.getElementById('navbar');
+        let scrolled = false
+
+        window.onscroll = function () {
+            if (window.pageYOffset > 100) {
+                navbar.classList.remove('top');
+                if (!scrolled) {
+                    navbar.style.transform = 'translateY(-70px)';
+                }
+                setTimeout(function () {
+                    navbar.style.transform = 'translateY(0)';
+                    scrolled = true;
+                }, 200);
+            } else {
+                navbar.classList.add('top');
+                scrolled = false;
+            }
+        };
+    </script>
+</body>
+
+</html>
